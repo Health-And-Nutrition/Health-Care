@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+#homeImage {
+    display: block;
+    position: relative;
+    background-image: url(../Imgs/home.jpg);
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* line-height: 750px; */
+    text-align: center;
+}
+
+.float {
+    float: right;
+}
+
+h1 {
+    font-size: 900%;
+}
+
+h2 {
+    font-size: 400%;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 17px;
+    text-align: center;
+    font-size: 200%;
+}
+
+ul li {
+    margin-left: 35px;
+}

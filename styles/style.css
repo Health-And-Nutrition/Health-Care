@@ -65,6 +65,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 color: green;
+margin-bottom: 10%;
 }
 .articleP{
     display: inline-block;
@@ -76,10 +77,58 @@ color: green;
 .dise2{
     height: 60%;
     width: 100%;
-    background-image: url(../Imgs/hypertension.jpg);
+    background-image: url(../Imgs/kidney.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: green;
+    margin-bottom: 10%;
 }
 
+ul {
+    margin-bottom: 5%;
+}
+
+.dise3{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/diabetes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+.dise4{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/IBS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+.dise5{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/CD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+.dise6{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/Obis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}

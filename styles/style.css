@@ -12,12 +12,10 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* line-height: 750px; */
     text-align: center;
 }
 
 .float {
-    /* float: right; */
     position: absolute;
     top: 20px;
     left: 88%;
@@ -41,7 +39,12 @@ nav {
     margin: 10px;
     
 }
-
+nav ul li:hover {
+    
+   cursor: pointer;
+   color: gray;
+    
+}
 li {
     display: inline-block;
     line-height: 80px;
@@ -57,7 +60,7 @@ li {
     font-size: 60px;
     margin-bottom: 20px;
 }
-.dise1{
+#dise1{
 height: 60%;
 width: 100%;
 background-image: url(../Imgs/hypertension.jpg);
@@ -73,8 +76,9 @@ margin-bottom: 10%;
    font-size: 200%;
    padding-left: 1%;
    background-color: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(10px);
 }
-.dise2{
+#dise2{
     height: 60%;
     width: 100%;
     background-image: url(../Imgs/kidney.jpg);
@@ -89,7 +93,7 @@ ul {
     margin-bottom: 5%;
 }
 
-.dise3{
+#dise3{
     height: 60%;
     width: 100%;
     background-image: url(../Imgs/diabetes.jpeg);
@@ -100,7 +104,7 @@ ul {
     margin-bottom: 10%;
 }
 
-.dise4{
+#dise4{
     height: 60%;
     width: 100%;
     background-image: url(../Imgs/IBS.jpg);
@@ -111,7 +115,7 @@ ul {
     margin-bottom: 10%;
 }
 
-.dise5{
+#dise5{
     height: 60%;
     width: 100%;
     background-image: url(../Imgs/CD.jpg);
@@ -122,13 +126,24 @@ ul {
     margin-bottom: 10%;
 }
 
-.dise6{
+#dise6{
     height: 60%;
     width: 100%;
     background-image: url(../Imgs/Obis.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+#dise7{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/epl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
     color: green;
     margin-bottom: 10%;
 }

@@ -13,10 +13,10 @@ var Disease1 = function (filePath, h1, h2) {
 };
 Disease1.avoidFood1 = [];
 
-new Disease1('cheese-Na.jpg', 'Cheese', 'High in sodium');
-new Disease1('fast-food.jpg', 'Fast Food', 'High in Salt and fat');
-new Disease1('spinach2.jpg', 'Spinach', 'High in K, Mg, Ca');
-new Disease1('fiber1.jpg', 'Fiber', 'DASH diet');
+new Disease1('tableImg/cheese-Na.jpg', 'Cheese', 'High in sodium');
+new Disease1('tableImg/fast-food.jpg', 'Fast Food', 'High in Salt and fat');
+new Disease1('tableImg/spinach2.jpg', 'Spinach', 'High in K, Mg, Ca');
+new Disease1('tableImg/fiber1.jpg', 'Fiber', 'DASH diet');
 
 
 var Disease2 = function (filePath, h1, h2) {
@@ -27,10 +27,10 @@ var Disease2 = function (filePath, h1, h2) {
 };
 Disease2.avoidFood2 = [];
 
-new Disease2('avocado.jpg', 'Avocado', 'High in potassium');
-new Disease2('canned-food.jpg', 'Canned Food', 'High in sodium');
-new Disease2('barley.jpg', 'Barley', 'Rich in phosphorus');
-new Disease2('spinach1.jpg', 'Spinach', 'Rich in iron');
+new Disease2('tableImg/avocado.jpg', 'Avocado', 'High in potassium');
+new Disease2('tableImg/canned-food.jpg', 'Canned Food', 'High in sodium');
+new Disease2('tableImg/barley.jpg', 'Barley', 'Rich in phosphorus');
+new Disease2('tableImg/spinach1.jpg', 'Spinach', 'Rich in iron');
 
 
 
@@ -42,10 +42,10 @@ var Disease3 = function (filePath, h1, h2) {
 };
 Disease3.avoidFood3 = [];
 
-new Disease3('bread1.jpg', 'Bread', 'White wheat raise glucose');
-new Disease3('sweet1.jpg', 'Sweets', 'High in glycemic index');
-new Disease3('fiber3.jpg', 'Fiber', 'Low in GI');
-new Disease3('protien1.jpg', 'Protein', 'Increase satiety');
+new Disease3('tableImg/bread1.jpg', 'Bread', 'White wheat raise glucose');
+new Disease3('tableImg/sweet1.jpg', 'Sweets', 'High in glycemic index');
+new Disease3('tableImg/fiber3.jpg', 'Fiber', 'Low in GI');
+new Disease3('tableImg/protien1.jpg', 'Protein', 'Increase satiety');
 
 
 
@@ -57,10 +57,10 @@ var Disease4 = function (filePath, h1, h2) {
 };
 Disease4.avoidFood4 = [];
 
-new Disease4('dairy1.jpg', 'Dairy', 'High in lactose');
-new Disease4('honey.jpg', 'Honey', 'High in fructose');
-new Disease4('oat.jpg', 'Oats', 'Prevent constipation');
-new Disease4('bean.jpg', 'Beans', 'High in soluble fibers');
+new Disease4('tableImg/dairy1.jpg', 'Dairy', 'High in lactose');
+new Disease4('tableImg/honey.jpg', 'Honey', 'High in fructose');
+new Disease4('tableImg/oat.jpg', 'Oats', 'Prevent constipation');
+new Disease4('tableImg/bean.jpg', 'Beans', 'High in soluble fibers');
 
 
 
@@ -72,10 +72,10 @@ var Disease5 = function (filePath, h1, h2) {
 };
 Disease5.avoidFood5 = [];
 
-new Disease5('wheat2.jpg', 'Wheat', 'Contain gluten');
-new Disease5('beer.jpg', 'Beer', 'Barley contain gluten');
-new Disease5('rice.jpg', 'Rice', 'Gluten-free');
-new Disease5('quinoa1.jpg', 'Quinoa', 'Rich in protein');
+new Disease5('tableImg/wheat2.jpg', 'Wheat', 'Contain gluten');
+new Disease5('tableImg/beer.jpg', 'Beer', 'Barley contain gluten');
+new Disease5('tableImg/rice.jpg', 'Rice', 'Gluten-free');
+new Disease5('tableImg/quinoa1.jpg', 'Quinoa', 'Rich in protein');
 
 
 // new Disease('cheese-Na.jpg', 'Cheese', 'High in sodium');

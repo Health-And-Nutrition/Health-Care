@@ -7,15 +7,15 @@ body.addEventListener('click', clickOnArticle);
 function clickOnArticle(event){
     var artc = event.target.id;
     if (artc === 'dise1'){
-        artc = 'hypertension';
+        artc = 'Hypertension';
         localStorage.setItem('local', JSON.stringify(artc));
         document.location.href = 'food.html';
     } else if (artc === 'dise2'){
-        artc = 'kidney disease';
+        artc = 'Kidney Disease';
         localStorage.setItem('local', JSON.stringify(artc));
         document.location.href = 'food.html';
     }else if (artc === 'dise3'){
-        artc = 'diabetes';
+        artc = 'Diabetes';
         localStorage.setItem('local', JSON.stringify(artc));
         document.location.href = 'food.html';
     }else if (artc === 'dise4'){
@@ -23,7 +23,7 @@ function clickOnArticle(event){
         localStorage.setItem('local', JSON.stringify(artc));
         document.location.href = 'food.html';
     }else if (artc === 'dise5'){
-        artc = 'celiac disease';
+        artc = 'Celiac Disease';
         localStorage.setItem('local', JSON.stringify(artc));
         document.location.href = 'food.html';
     }else if (artc === 'dise6'){

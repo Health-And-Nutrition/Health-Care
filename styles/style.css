@@ -1,6 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
+    /* background-image: url(../Imgs/wall.jpg);
+    background-size: 15%; */
   }
 
 #homeImage {
@@ -146,4 +148,18 @@ ul {
     background-position-y: bottom;
     color: green;
     margin-bottom: 10%;
+}
+
+table, tr, td  {
+    border: 1px solid black;
+
+}
+
+table{
+left: 30%;}
+figure  {
+    width: 300px;
+}
+figure img {
+    width: 300px;
 }

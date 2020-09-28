@@ -32,3 +32,35 @@ function kidney(event) {
     }
 }
 
+// Calorie Calaulater 
+// input: gender ( radio) . weight ( kg) . height (cm) . age 
+
+// kcal-men: (10*kg) + (6.25*cm) - (5*age) +5
+// kcal-women: (10*kg) + (6.25 *cm) - (5* age)-161
+
+var man = document.getElementById('male');
+var woman = document.getElementById('female');
+var weight = document.getElementById('weight');
+var height = document.getElementById('height');
+var age = document.getElementById('age');
+var buttonCalorie= document.getElementById('calorieSubmit');
+var labelC = document.getElementById('result3');
+
+buttonCalorie.addEventListener('click', calorie);
+
+ function calorie (event) {
+     event.preventDefault();   // to prevent refresh the browser 
+     if (man.checked) {
+         var kcalMan = (10 * weight.value) + ( 6.25 * height.value) - ( 5 * age.value) + 5;
+         labelC.innerHTML = kcalMan;
+
+     } else if (woman.checked) {
+        
+            var kcalWoman = (10 * weight.value) + ( 6.25 * height.value) - ( 5 * age.value) - 161 ;
+            labelC.innerHTML = kcalWoman;
+   
+     }
+ }
+
+
+

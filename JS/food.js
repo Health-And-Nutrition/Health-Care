@@ -21,6 +21,7 @@ new Disease1('../tableImgs/spinach2.jpg', 'Spinach', 'High in K, Mg, Ca');
 new Disease1('../tableImgs/fiber1.jpg', 'Fiber', 'DASH diet');
 
 
+
 var Disease2 = function (filePath, h1, h2) {
     this.filePath = filePath;
     this.h1 = h1;
@@ -34,6 +35,7 @@ new Disease2('../tableImgs/avocado.jpg', 'Avocado', 'High in potassium');
 new Disease2('../tableImgs/canned-food.jpg', 'Canned Food', 'High in sodium');
 new Disease2('../tableImgs/barley.jpg', 'Barley', 'Rich in phosphorus');
 new Disease2('../tableImgs/spinach1.jpg', 'Spinach', 'Rich in iron');
+
 
 
 

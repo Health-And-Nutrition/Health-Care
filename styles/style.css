@@ -156,10 +156,15 @@ table, tr, td  {
 }
 
 
-
-
 table{
 left: 30%;}
+
+#table1{position: absolute;
+left: 25%;}
+#table2{position: absolute;
+    left: 50%;}
+    
+
 figure  {
     width: 300px;
 }

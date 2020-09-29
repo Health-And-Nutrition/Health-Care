@@ -155,13 +155,18 @@ table, tr, td  {
     border: 1px solid black;
 }
 
-table{
-left: 30%;}
+#table1{position: absolute;
+left: 25%;}
+#table2{position: absolute;
+    left: 50%;}
+    
+
 figure  {
     width: 300px;
 }
 figure img {
     width: 300px;
+    height: 200px;
 }
 .dropbtn {
     background-color: #777777;

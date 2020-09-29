@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.chatbox {
+    position: fixed;
+    border-radius: 15px 15px 0 15px;
+    top: 85%;
+    left: 65.5%;
+    width: 500px;
+    min-width: 390px;
+    pointer-events: none;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    height: 565px !important;
+    background: rgb(110,47,152);
+    background: linear-gradient(90deg, rgba(110,47,152,1) 0%, rgba(130,54,182,1) 50%, rgba(160,69,221,1) 100%);
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+    opacity: 0;
+    }
+#chika:checked ~ .chatbox{
+    opacity: 1;
+    top: 11%;
+    pointer-events: auto;
+    height: 600px;
+}
+.chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    background: #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 5px #931FE0;
+}
+.chatlogs::-webkit-scrollbar {
+    width: 10px;
+
+
+}
+.chatlogs::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin: 10px;
+}
+.chat .user-photo {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.chat .user-photo img{
+    width: 100%;
+    
+}
+.chat .chat-message {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.friend .chat-message {
+    background: rgb(110,47,152);
+    background: linear-gradient(90deg, rgba(110,47,152,1) 0%, rgba(130,54,182,1) 50%, rgba(160,69,221,1) 100%);
+}
+.self .chat-message {
+    background: rgb(175,119,210);
+    background: linear-gradient(90deg, rgba(175,119,210,1) 0%, rgba(160,106,196,1) 50%, rgba(144,93,179,1) 100%);
+    order: -1;
+}
+.chat-form {
+    margin-left: 6px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;  
+}
+.chat-form textarea {
+    background: #fbfbfb;
+    width: 75%;
+    height: 50px;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.chat-form textarea:focus {
+    background: #fff;
+}
+.chat-form textarea::-webkit-scrollbar {
+    width: 10px;
+
+
+}
+.chat-form textarea::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.chat-form button {
+    background:#611594;
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 3px 0#611594;
+    cursor: pointer;
+
+    -webkit-transition: backgroung .2s ease;
+    -moz-transition: backgroung .2s ease;
+    -o-transition: backgroung .2s ease;
+}
+.chat-form button:hover {
+    background: #7716b8;
+}
+label {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+label {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 55px;
+    width: 55px;
+    /* background: #333; */
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+label i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+label i.cloose{
+    opacity: 0;
+    pointer-events: none;
+}
+#chika:checked ~ label i.cloose{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+#chika:checked ~ label i.cloose{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+#chika{
+    display: none;
+}
+label {
+    background-image: url('../Imgs/mass.png') !important;
+    background-size: cover !important;
+}
+#chika:checked ~ label {
+    animation-name: rotate;
+    animation-duration: 0.6s;
+}
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

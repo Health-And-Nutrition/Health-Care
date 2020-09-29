@@ -1,6 +1,5 @@
 'use strict';
 
-
 var table1 = document.getElementById('table1');
 var result = document.getElementById('table-content');
 var table2 = document.getElementById('table2');

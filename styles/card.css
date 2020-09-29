@@ -104,20 +104,32 @@ body {
 }
 
 
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+#d1 {
+  background-image: url('../Imgs/hypertension.jpg');
 }
 
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+#d2 {
+  background-image: url('../Imgs/kidney1.jpg');
 }
 
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+#d3 {
+  background-image: url('../Imgs/diabetes2.jpg');
 }
 
-.card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+#d4 {
+  background-image: url('../Imgs/ibs-pic.jpg');
+}
+
+#d5 {
+  background-image: url('../Imgs/celiac1.jpg');
+}
+
+#d6 {
+  background-image: url('../Imgs/obesity.jpg');
+}
+
+#d7 {
+  background-image: url('../Imgs/epilepsy1.jpg');
 }
 
 .card__title {

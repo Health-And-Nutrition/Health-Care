@@ -21,7 +21,7 @@ body, html {
   }
   .bgimg-1 {
     background-image: url("../Imgs/hohoho.png");
-    min-height: 100%;
+    min-height: 80%;
   }
 
   /* This is a comment */
@@ -103,7 +103,6 @@ ul {
 
   
   .bgimg-2 {
-    background-image: url("../Imgs/health2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,6 +114,13 @@ ul {
     min-height: 400px;
   }
   
+  #paragraphDiv {
+    background-image: url('../testImgs/1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
   .caption {
     position: absolute;
     left: 0;

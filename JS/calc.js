@@ -67,7 +67,7 @@ function diabetes(event) {
     event.preventDefault();
     var diabetesEquation = Math.floor(0.3 * inputDiabetes.value);
     console.log(diabetesEquation);
-    labelD.innerHTML = diabetesEquation;   
+    labelD.innerHTML = diabetesEquation + ' units of insulin.'  ;
 }
 
 
@@ -81,11 +81,11 @@ function kidney(event) {
     event.preventDefault();
     if (radioInput1.checked) {
         var preDialysis = 0.6 * inputKidney.value;
-        labelK.innerHTML = preDialysis;
+        labelK.innerHTML = preDialysis+ ' g of protein';
     }
     else if (radioInput2.checked) {
         var dialysis = 1.2 * inputKidney.value;
-        labelK.innerHTML = dialysis;
+        labelK.innerHTML = dialysis + ' g of protein.';
     }
 }
 
@@ -103,12 +103,12 @@ function calorie(event) {
     event.preventDefault();   // to prevent refresh the browser 
     if (man.checked) {
         var kcalMan = (10 * weight.value) + (6.25 * height.value) - (5 * age.value) + 5;
-        labelC.innerHTML = kcalMan;
+        labelC.innerHTML = kcalMan + ' kcal / day ';
 
     } else if (woman.checked) {
 
         var kcalWoman = (10 * weight.value) + (6.25 * height.value) - (5 * age.value) - 161;
-        labelC.innerHTML = kcalWoman;
+        labelC.innerHTML = kcalWoman+ ' kcal / day';
 
     }
 }

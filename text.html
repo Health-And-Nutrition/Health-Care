@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/text.css">
+</head>
+<body>
+    <input type="checkbox" id="chika">
+    <label id="icon" for="chika">
+        <i class="opeeen"></i>
+        <i class="cloose"></i>
+    </label>
+    <div class="chatbox">
+        <div class="chatlogs" id="chatlog">
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">Hallo mate, In this section we can provide you a better help. <br>
+                </p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">By answering these 9 information qustions you will help yourself and help our therapists when they contact you </p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">I will be with you in the trip so you won't get bored</p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">So first of all mate, What is your name?</p>
+            </div>
+            <!-- <div class="chat self">
+                <div class="user-photo"><img src="Imgs/ava.png"></div>
+                <p class="chat-message">wazzzzzzzzzzaaaaaaaaaaaaaaap</p>
+            </div> -->
+
+        </div>
+
+        <div class="chat-form">
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <button id="sub" type="submit" onclick="myFunction()" onclick="document.getElementById('text').value = ''">Send</button>
+        </div>
+    </div>
+
+    
+    <script src="JS/text.js"></script>
+</body>
+</html>

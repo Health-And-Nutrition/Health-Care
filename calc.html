@@ -15,7 +15,7 @@
     <option value="">--select--</option>
     <option value="diabetes">Diabetes</option>
     <option value="kidney">Kidney</option>
-    <option value="calorie">Calorie</option>
+    <option value="calorie">Obesity</option>    
   </select>
 
   <!-- <label for="list" id="calc"></label> -->
@@ -32,8 +32,9 @@
     <div class="modal-content">
       <span class="close">×</span>
       <h1>Diabetes</h1>
+      <h2>Insulin Calculator</h2>
       <form action="">
-        <label for="">g of CHO</label><br>
+        <label for="">Enter the amount of carbohydrates you take in your meal , I will tell you how much units of insulin you should take : </label><br>
         <input type="number" name="" id="inputDiabetes"><br>
         <input type="submit" name="" id="diabetesSubmit">
         <input type="reset"><br>
@@ -55,14 +56,16 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">×</span>
-      <h1>Kidney</h1>
+      <h1>Kidney Disease </h1>
+      <h2>Protein Intake Calculator</h2>
       <form action="">
+       <label for="">In which stage are you in kidney failure ? </label> <br>
         <input type="radio" id="preDialysis" name="kidney" value="pre-dialysis">
         <label for="preDialysis">Pre-Dialysis</label><br>
         <input type="radio" id="dialysis" name="kidney" value="dialysis">
         <label for="dialysis">Dialysis</label><br>
+        <label for="kidneySubmit">Enter your weight in kg: </label>
         <input type="number" name="" id="inputKidney"><br>
-        <label for="kidneySubmit">Kg body weight</label>
         <input type="submit" id="kidneySubmit">
         <label for="" id="result2"></label>
       </form>
@@ -81,22 +84,24 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">×</span>
-      <h1>Calorie</h1>
+      <h1>Obesity</h1>
+      <h2>Calorie Calculator to lose weight</h2>
       <form action="">
+        <label for="">Gender : </label> <br>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male"> Male </label> <br>
 
         <input type="radio" id="female" name="gender" value="female">
         <label for="female"> Female </label><br>
 
-        <label for="inputWeight">Weight (in kg) : </label>
+        <label for="inputWeight">Weight (in kg) : </label> <br>
         <input type="number" id="weight">
 
 
-        <label for="inputHeight">Height (in cm) : </label>
+        <label for="inputHeight">Height (in cm) : </label> <br>
         <input type="number" id="height">
 
-        <label for="inputAge">Age (in years) : </label>
+        <label for="inputAge">Age (in years) : </label> <br>
         <input type="number" id="age">
 
 

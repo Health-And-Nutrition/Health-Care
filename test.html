@@ -87,18 +87,18 @@
     <!-- End of calc models -->
     <nav>
         <div class="dropdown">
-            <button class="dropbtn">Diseases</button>
+            <button id="dis" class="dropbtn">Diseases</button>
             <div class="dropdown-content">
-                <a href="#">Hypertension</a>
-                <a href="#">Kidney Disease</a>
-                <a href="#">Diabetes</a>
-                <a href="#">IBS</a>
-                <a href="#">Celiac Disease</a>
-                <a href="#">Obesity</a>
-                <a href="#">Epilepsy</a>
+                <a id="hyper" href="#">Hypertension</a>
+                <a id="kid" href="#">Kidney Disease</a>
+                <a id="dia" href="#">Diabetes</a>
+                <a id="ibs" href="#">IBS</a>
+                <a id="cel" href="#">Celiac Disease</a>
+                <a id="ob" href="#">Obesity</a>
+                <a id="epil" href="#">Epilepsy</a>
             </div>
         </div>
-        <button class="dropbtn">restaurants</button>
+        <button id="rest" class="dropbtn">restaurants</button>
 
         <select class="dropbtn" id="list" style="padding: 10px;" onchange="getSelectValue();">
             <option value="" id="firstOption">Calculations</option>
@@ -107,9 +107,9 @@
             <option value="calorie">Calorie</option>
         </select>
 
-        <button class="dropbtn">Recepies</button>
-        <button class="dropbtn">Contact Therapists</button>
-        <button class="dropbtn">About Us</button>
+        <button id="rec" class="dropbtn">Recepies</button>
+        <button id="therap" class="dropbtn">Contact Therapists</button>
+        <button id="about" class="dropbtn">About Us</button>
     </nav>
 
     <div id="paragraphDiv" style="color: white;text-align:center;padding:50px 80px;text-align: justify;">
@@ -230,6 +230,7 @@
             <span class="border">COOL!</span>
         </div>
     </div>
+    <footer #about ></footer>
     <script src="JS/calc.js"></script>
 </body>
 

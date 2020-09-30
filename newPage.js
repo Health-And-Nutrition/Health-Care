@@ -1,5 +1,5 @@
 
-var modal = document.getElementsByClassName('modal');
+var modal = document.getElementsByClassName('newModal');
 
 var btn = document.getElementsByClassName("myBtn");
 
@@ -45,32 +45,32 @@ span[0].onclick = function() {
 }
 
 span[1].onclick = function() {
-    modal[1].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 
 span[2].onclick = function() {
-    modal[2].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 
 span[3].onclick = function() {
-    modal[3].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 
 span[4].onclick = function() {
-    modal[4].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 
 span[5].onclick = function() {
-    modal[5].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 
 span[6].onclick = function() {
-    modal[6].style.display = "none";
+    modal[0].style.display = "none";
     clear();
 }
 

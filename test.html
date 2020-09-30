@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/cals.css">
     <link rel="stylesheet" href="styles/text.css">
-<link rel="stylesheet" href="styles/aboutus.css">
-    
-    
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="newPage.css">
+
 </head>
 
-<body>
+<body id="parent">
     <div class="bgimg-1">
         <!-- <div class="caption">
                 <span class="border">SCROLL DOWN</span>
@@ -157,7 +157,19 @@
                   <p class="card__text">Hypertension refers to high blood pressure. To maintain your blood pressure levels, you
                     should maintain your food intake and reduce the amount of salt you take, and try to maintain a healthy
                     weight. Each disease has a certin diet rules and restrictions.</p>
-                  <button class="btn btn--block card__btn">Button</button>
+                  <button id="myBtn1" class="btn btn--block card__btn myBtn">Button</button>
+                  <div id="myModal" class="newModal">
+
+                    <div class="newModal-content filter">
+                        <span class="close">×</span>
+                        <div class="tableColDiv">
+                            <table id="table1"></table>
+                        </div>
+                        <div class="tableColDiv">
+                            <table id="table2"></table>
+                        </div>
+                    </div>
+                </div>
                 </div>
               </div>
             </li>
@@ -168,7 +180,18 @@
                     <div class="card__title">Kidney Disease</div>
                     <p class="card__text">Dietary guidelines for kidney patients vary according to the case or the stage. You should
                       control your intake of potassium, calcium, phosphorus, sodium, protein, fluid and calorie.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn2" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -180,7 +203,18 @@
                     <p class="card__text">To help you in following your diet, we provide you with a list of healthy restaurants that
                       have your order
                       with consideration of your diet limits.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn3" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -193,7 +227,18 @@
                       Patients with IBS should do some changes in their diet to treat the symptoms.
                       Foods that cause pain are different from one patient to another.
                       You should know what are the triggers that affect your colon and avoid them.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn4" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -204,7 +249,18 @@
                     <div class="card__title">Celiac Disease</div>
                     <p class="card__text">Celiac disease is a digestive disorder in the small intestine. This disease is triggered by
                       eating foods that contain Gluten.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn5" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -216,7 +272,18 @@
                     <p class="card__text">Obesity is a medical disorder that involve an excessive amount of body fat,
                       and it increases the risk of other health problems.
                       you should reduce the amount of calorie you take per day to help your body to lose the excessive fat.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn6" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -227,7 +294,18 @@
                     <div class="card__title">Epilepsy</div>
                     <p class="card__text">Epilepsy is a neurological disease that causes seizures. Studies suggest that following a
                       ketogenic diet would help to reduce the seizures.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                      <button id="myBtn7" class="btn btn--block card__btn myBtn">Button</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div class="tableColDiv">
+                                <table id="table1"></table>
+                            </div>
+                            <div class="tableColDiv">
+                                <table id="table2"></table>
+                            </div>
+                        </div>
                   </div>
                 </div>
               </li>
@@ -479,6 +557,8 @@
 
     <script src="JS/calc.js"></script>
     <script src="JS/text.js"></script>
+    <script src="newPage.js"></script>
+    <script src="JS/food.js"></script>
 
 </body>
 

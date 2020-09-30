@@ -56,13 +56,14 @@ function myFunction() {
         messagefull.appendChild(messagecontent);
         chatlog.appendChild(messagefull);
 
+        if(i <9 ){
+            replies.push(message);
+            i++;
+            document.getElementById('text').value = "";
+            next();
+            console.log(replies);
+        }
+        
 
-        replies.push(message);
-        i++;
-        document.getElementById('text').value = "";
-        next();
-        console.log(replies);
     }
-
-
 }

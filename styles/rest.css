@@ -48,7 +48,7 @@
 .cardrest_circle {
     background: url('../restImg/azka.jpg') 
     no-repeat center bottom;
-    background-size: 103%;
+    background-size: 158%;
     border-radius: 50%;
     background-position: top;
     height: 400px;
@@ -219,7 +219,7 @@
 
 
 .restHeader {
-    color: #b8b897;
+    color: #593846;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 200;
@@ -258,9 +258,9 @@
     -webkit-border-radius: 2px;
     -webkit-transition: 0.2s ease-out;
     background-clip: padding-box;
-    border: 2px solid #b8b897;
+    border: 2px solid #593846;
     border-radius: 2px;
-    color: #818b4b;
+    color: #99335E;
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -275,7 +275,7 @@
     transition: 0.2s ease-out;
 }
 .cta:hover {
-    background-color: #b8b897;
+    background-color: #593846;
     /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     color: #fff;
     /* -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

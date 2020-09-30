@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/card.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/cals.css">
+    <link rel="stylesheet" href="styles/text.css">
+
     
     
 </head>
@@ -87,7 +89,7 @@
 
 
     <!-- End of calc models -->
-    <nav>
+    <nav class="level2Items">
         <div class="dropdown">
             <button id="dis" class="dropbtn">Diseases</button>
             <div class="dropdown-content">
@@ -100,7 +102,8 @@
                 <a id="epil" href="#">Epilepsy</a>
             </div>
         </div>
-        <button id="rest" class="dropbtn">restaurants</button>
+        <button id="rest" class="dropbtn">Restaurants</button>
+        <button id="rec" class="dropbtn">Recepies</button>
 
         <select class="dropbtn" id="list" style="padding: 10px;" onchange="getSelectValue();">
             <option value="" id="firstOption">Calculations</option>
@@ -109,7 +112,7 @@
             <option value="calorie">Calorie</option>
         </select>
 
-        <button id="rec" class="dropbtn">Recepies</button>
+        
         <button id="therap" class="dropbtn">Contact Therapists</button>
         <button id="about" class="dropbtn">About Us</button>
     </nav>
@@ -118,6 +121,12 @@
         <h3 style="text-align:center; color: whitesmoke;">Nutrition Can Help You</h3>
         <p>Proper diet helps controlling lifestyle diseases. A therapeutic nutrition reduce symptoms of diseases like diabetes, cardiovascular diseases, digestive diseases, obesity, and other disorders.  Therapeutic nutrition also helps to prevent the complications of some chronic diseases.</p>
     </div>
+    <br>
+    <br>
+    <div id="paragraphDiv2" style="color: white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center; color: whitesmoke;">Diseases Section</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste harum maxime dignissimos corporis vitae corrupti magni accusantium quo a. Autem expedita ab, accusantium optio tempore molestias magni laboriosam. Esse, molestiae..</p>
+  </div>
 
     <div class="bgimg-2">
         <ul class="cards">
@@ -209,8 +218,8 @@
         </div> -->
     </div>
 
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <div id="hash" style="position:relative;">
+        <div style="color:#ddd;text-align:center;padding:50px 80px;text-align: justify;">
             <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
         </div>
     </div>
@@ -332,8 +341,47 @@
             <span class="border">COOL!</span>
         </div>
     </div>
+
+    <!-- chatbox -->
+
+    <input type="checkbox" id="chika">
+    <label id="icon" for="chika">
+        <i class="opeeen"></i>
+        <i class="cloose"></i>
+    </label>
+    <div class="chatbox">
+        <div class="chatlogs" id="chatlog">
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">Hallo mate, In this section we can provide you a better help. <br>
+                </p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">By answering these 9 information qustions you will help yourself and help our therapists when they contact you </p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">I will be with you in the trip so you won't get bored</p>
+            </div>
+            <div class="chat friend">
+                <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+                <p class="chat-message">So first of all mate, What is your name?</p>
+            </div>
+
+        </div>
+
+        <div class="chat-form">
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <button id="sub" type="submit" onclick="myFunction()" onclick="document.getElementById('text').value = ''">Send</button>
+        </div>
+    </div>
+    <!-- chatbox end here -->
+
     <footer #about ></footer>
     <script src="JS/calc.js"></script>
+    <script src="JS/text.js"></script>
+
 </body>
 
 </html>

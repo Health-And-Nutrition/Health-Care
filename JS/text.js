@@ -7,8 +7,8 @@ var replies = [];
 
 var qustionsArray = ['Your Gender \'male\' or \'female\'?'
     , 'The Disastrous Day You Where Born In -Your Birthday In YY/MM/DD Form-?'
-    , 'Your Wight? In \'CM\' We Don\'t Use US Measurement Units'
-    , 'Your Hight?'
+    , 'Your Wight? In \'Kg\' We Don\'t Use US Measurement Units'
+    , 'Your Hight? '
     , 'So Do You Do Some Activities, Or You Are A Waste Of Life? (Specify By Saying I do Exercises Between: 1 Time a Week, 3-4 Times, 6-7 Times)'
     , 'Do You Have A Disease That Affect Your Health? If Yes What is it'
     , 'Are You Taking Any Kind Of Medications Related To Your Health?'

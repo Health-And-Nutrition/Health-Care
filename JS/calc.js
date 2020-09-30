@@ -13,6 +13,7 @@ function getSelectValue() {
     } else if(selectedValue == 'calorie') {
         modal[2].style.display = "block";
     }
+    resetSelectElement();
 }
 getSelectValue();
 
@@ -111,4 +112,9 @@ function calorie(event) {
         labelC.innerHTML = kcalWoman+ ' kcal / day';
 
     }
+}
+
+function resetSelectElement(selectElement) {
+    document.getElementById('list').selectedIndex = 0;  // first option is selected, or
+                                     // -1 for no option selected
 }

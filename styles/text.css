@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-body {
-    overflow: hidden;
-}
+
 .chatbox {
     position: fixed;
     border-radius: 15px 15px 0 15px;
@@ -23,6 +20,7 @@ body {
     margin: 20px auto;
     box-shadow: 0 3px #ccc;
     opacity: 0;
+    z-index: 10000;
     }
 #chika:checked ~ .chatbox{
     opacity: 1;
@@ -131,8 +129,8 @@ body {
 .chat-form button:hover {
     background: #7716b8;
 }
-label {
-    position: absolute;
+#icon {
+    position: fixed;
     right: 30px;
     bottom: 20px;
     height: 55px;
@@ -143,8 +141,8 @@ label {
     font-size: 30px;
     cursor: pointer;
 }
-label {
-    position: absolute;
+#icon {
+    position: fixed;
     right: 30px;
     bottom: 20px;
     height: 55px;
@@ -156,23 +154,23 @@ label {
     font-size: 30px;
     cursor: pointer;
 }
-label i {
-    position: absolute;
+#icon i {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease;
 }
-label i.cloose{
+#icon i.cloose{
     opacity: 0;
     pointer-events: none;
 }
-#chika:checked ~ label i.cloose{
+#chika:checked ~ #icon i.cloose{
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) rotate(180deg);
 }
-#chika:checked ~ label i.cloose{
+#chika:checked ~ #icon i.cloose{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) rotate(180deg);
@@ -180,11 +178,11 @@ label i.cloose{
 #chika{
     display: none;
 }
-label {
+#icon {
     background-image: url('../Imgs/mass.png') !important;
     background-size: cover !important;
 }
-#chika:checked ~ label {
+#chika:checked ~ #icon {
     animation-name: rotate;
     animation-duration: 0.6s;
 }

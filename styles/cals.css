@@ -29,6 +29,9 @@
   font-size: 28px;
   font-weight: bold;
 }
+#calcalc {
+  width: 300px;
+}
 
 .close:hover,
 .close:focus {
@@ -41,7 +44,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=number], radio {
-  width: 100%;
+  /* width: 100%; */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -52,7 +55,7 @@ input[type=number], radio {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #99335e;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -61,10 +64,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #591d36;
 }
 
 .modal-content {
+  z-index: 10001;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -105,3 +109,24 @@ input[type=submit]:hover {
     ul li ul.dropdown li{
         display: block;
     }
+
+    .calcDiv {
+      display: inline-block;
+      width: 400px;
+      margin: 0;
+    }
+
+.resultsDiv {
+line-height: 150px;
+display: inline-block;
+height: 100px;
+width: 60%;
+vertical-align: top;
+font-size: 20px;
+}
+
+.resultsDiv p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}

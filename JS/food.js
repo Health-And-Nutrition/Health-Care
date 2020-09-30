@@ -488,10 +488,17 @@ var renderTableSecondColumn = function (diseaseName) {
     }
 }
 
-var diseaseItself = JSON.parse(localStorage.getItem('local'));
+var diseaseItself;
 console.log(diseaseItself)
 
-renderTableFirstColumn(diseaseItself);
-renderTableSecondColumn(diseaseItself);
+function generalRender() {
+    renderTableFirstColumn(diseaseItself);
+    renderTableSecondColumn(diseaseItself);
+}
 
 
+
+function clear() {
+    document.getElementById('table1').textContent = '';
+    document.getElementById('table2').textContent = '';
+}

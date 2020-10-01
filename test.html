@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/text.css">
     <link rel="stylesheet" href="styles/table.css">
     <link rel="stylesheet" href="newPage.css">
-
+    <link rel="stylesheet" href="styles/aboutus.css">
 </head>
 
 <body id="parent">
@@ -105,34 +105,23 @@
 
     <!-- End of calc models -->
 
-
     <nav class="level2Items">
-        <div class="dropdown">
-            <button id="dis" class="dropbtn">Diseases</button>
-            <div class="dropdown-content">
-                <a id="hyper" href="#">Hypertension</a>
-                <a id="kid" href="#">Kidney Disease</a>
-                <a id="dia" href="#">Diabetes</a>
-                <a id="ibs" href="#">IBS</a>
-                <a id="cel" href="#">Celiac Disease</a>
-                <a id="ob" href="#">Obesity</a>
-                <a id="epil" href="#">Epilepsy</a>
-            </div>
-        </div>
-        <button id="rest" class="dropbtn">Restaurants</button>
-        <button id="rec" class="dropbtn">Recepies</button>
+        <button onclick="location.href = '#diseasesSection';"  id="dis" class="dropbtn">Diseases</button>
+        <button onclick="location.href = '#restSection';" id="rest" class="dropbtn">Restaurants</button>
+        <button onclick="location.href = '#recSection';" id="rec" class="dropbtn">Recepies</button>
 
         <select class="dropbtn" id="list" style="padding: 10px;" onchange="getSelectValue();">
             <option value="" id="firstOption">Calculations</option>
             <option value="diabetes">Diabetes</option>
             <option value="kidney">Kidney</option>
-            <option value="calorie">Calorie</option>
+            <option value="calorie">Obesity</option>
         </select>
 
-        
-        <button id="therap" class="dropbtn" onclick="chatmatechat()">Contact Therapists</button>
-        <button id="about" class="dropbtn">About Us</button>
-    </nav>
+
+        <button onclick="location.href = '#diseasesSection';" id="therap" class="dropbtn" onclick="chatmatechat()">Contact Therapists</button>
+        <button onclick="location.href = '#ourteamSection';" id="about" class="dropbtn">About Us</button>
+    </nav> 
+
 
     <div id="paragraphDiv" style="color: white;text-align:center;padding:50px 80px;text-align: justify; font-size: 30px; font-family: 'Raleway', sans-serif;">
         <h3 style="text-align:center; color: whitesmoke; font-size: 40px; font-family: 'Raleway', sans-serif;">Nutrition Can Help You</h3>
@@ -146,7 +135,7 @@
 
   <br>
   <br>
-  <h3 style="text-align:center; color:#591D36; font-size: 40px;">Diseases Section</h3>
+  <h3 id="diseasesSection" style="text-align:center; color:#591D36; font-size: 40px;">Diseases Section</h3>
     <div class="bgimg-2">
         <ul class="cards">
             <li class="cards__item">
@@ -157,16 +146,16 @@
                   <p class="card__text">Hypertension refers to high blood pressure. To maintain your blood pressure levels, you
                     should maintain your food intake and reduce the amount of salt you take, and try to maintain a healthy
                     weight. Each disease has a certin diet rules and restrictions.</p>
-                  <button id="myBtn1" class="btn btn--block card__btn myBtn">Button</button>
+                  <button style="background-color: #593846;" id="myBtn1" class="btn btn--block card__btn myBtn">Examples</button>
                   <div id="myModal" class="newModal">
 
                     <div class="newModal-content filter">
                         <span class="close">×</span>
-                        <div class="tableColDiv">
-                            <table id="table1"></table>
+                        <div style="float: left;" class="table-title">
+                            <table class="table-fill" id="table1"></table>
                         </div>
-                        <div class="tableColDiv">
-                            <table id="table2"></table>
+                        <div style="float: left;">
+                            <table class="table-fill" id="table2"></table>
                         </div>
                     </div>
                 </div>
@@ -180,17 +169,17 @@
                     <div class="card__title">Kidney Disease</div>
                     <p class="card__text">Dietary guidelines for kidney patients vary according to the case or the stage. You should
                       control your intake of potassium, calcium, phosphorus, sodium, protein, fluid and calorie.</p>
-                      <button id="myBtn2" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn2" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -203,17 +192,17 @@
                     <p class="card__text">To help you in following your diet, we provide you with a list of healthy restaurants that
                       have your order
                       with consideration of your diet limits.</p>
-                      <button id="myBtn3" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn3" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -227,17 +216,17 @@
                       Patients with IBS should do some changes in their diet to treat the symptoms.
                       Foods that cause pain are different from one patient to another.
                       You should know what are the triggers that affect your colon and avoid them.</p>
-                      <button id="myBtn4" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn4" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -249,17 +238,17 @@
                     <div class="card__title">Celiac Disease</div>
                     <p class="card__text">Celiac disease is a digestive disorder in the small intestine. This disease is triggered by
                       eating foods that contain Gluten.</p>
-                      <button id="myBtn5" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn5" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -272,17 +261,17 @@
                     <p class="card__text">Obesity is a medical disorder that involve an excessive amount of body fat,
                       and it increases the risk of other health problems.
                       you should reduce the amount of calorie you take per day to help your body to lose the excessive fat.</p>
-                      <button id="myBtn6" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn6" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -294,17 +283,17 @@
                     <div class="card__title">Epilepsy</div>
                     <p class="card__text">Epilepsy is a neurological disease that causes seizures. Studies suggest that following a
                       ketogenic diet would help to reduce the seizures.</p>
-                      <button id="myBtn7" class="btn btn--block card__btn myBtn">Button</button>
+                      <button style="background-color: #593846;" id="myBtn7" class="btn btn--block card__btn myBtn">Examples</button>
                       <div id="myModal" class="newModal">
     
                         <div class="newModal-content filter">
                             <span class="close">×</span>
-                            <div class="tableColDiv">
-                                <table id="table1"></table>
-                            </div>
-                            <div class="tableColDiv">
-                                <table id="table2"></table>
-                            </div>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
                         </div>
                   </div>
                 </div>
@@ -333,7 +322,7 @@
 <br>
 <br>
 <br>
-<h3 style="text-align:center; color:#591D36; font-size: 40px;">Healthy Restaurants</h3>
+<h3 id="restSection" style="text-align:center; color:#591D36; font-size: 40px;">Healthy Restaurants</h3>
 <br>
 <br>
 
@@ -401,7 +390,7 @@
   <br>
   <br>
   <br>
-  <h3 style="text-align:center; color:#591D36; font-size: 40px;">Healthy Recipes</h3>
+  <h3 id="recSection" style="text-align:center; color:#591D36; font-size: 40px;">Healthy Recipes</h3>
   <br>
   <br>
 
@@ -471,7 +460,7 @@
     <div id="endYal"></div>
     <br>
     <br>
-    <h3 style="text-align:center; color:#591D36; font-size: 40px;">Out Team </h3>
+    <h3 id="ourteamSection" style="text-align:center; color:#591D36; font-size: 40px;">Our Team </h3>
     <br>
     <!-- the out team section -->
 <footer >
@@ -484,7 +473,7 @@
                         
                     </div>
                     <div class="team-content">
-                        <h3 class="title">Reem Assa'ad</h3>
+                        <h3 class="title">Reem Asaad</h3>
                         <span class="post">Web Developer</span>
                     </div>
                 </div>
@@ -497,7 +486,7 @@
                     </div>
                     <div class="team-content">
                         <h3 class="title">Huda Al-Jundi</h3>
-                        <span class="post">Nutritionist </span>
+                        <span class="post">Web Developer</span>
                     </div>
                 </div>
             </div>

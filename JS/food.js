@@ -517,7 +517,6 @@ var renderTableSecondColumn = function (diseaseName) {
 }
 
 var diseaseItself;
-console.log(diseaseItself)
 
 function generalRender() {
     renderTableFirstColumn(diseaseItself);

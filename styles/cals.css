@@ -22,8 +22,8 @@
   width: 80%;
 }
 
-/* The Close Button */
-.close {
+/* The cloose Button */
+.cloose {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -33,8 +33,8 @@
   width: 300px;
 }
 
-.close:hover,
-.close:focus {
+.cloose:hover,
+.cloose:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

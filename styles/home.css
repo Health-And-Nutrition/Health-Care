@@ -118,6 +118,7 @@ ul {
   
   .bgimg-3 {
     min-height: 400px;
+    z-index: -2;
   }
   
   #paragraphDiv {
@@ -129,7 +130,7 @@ ul {
 
   
   #paragraphDiv2 {
-    background-image: url('../Imgs/health2.jpg');
+    background-image: url('../Imgs/health4.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

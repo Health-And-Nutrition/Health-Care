@@ -1,51 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/rest.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cals.css">
+    <link rel="stylesheet" href="styles/text.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="newPage.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
 </head>
-<body>
-    <article>
-        <h1></h1>
-        <img src="" alt="">
-        <section>
-            <h1>About Us</h1>
-        </section>
-        <nav>
-            <ul>
-                <li>Healthy Restaurants</li>
-                <li>Healthier Consumes</li>
-                <li>Healthy Recipes</li>
-                <li>Smart Calculators</li>
-                <li>Contact Our Therapists</li>
-            </ul>
-        </nav>
-    </article>
-    <article>
-        <img src="" alt="">
-        <p></p>
-        <button type="submit">
-    </article>
-    <article>
-        <img src="" alt="">
-        <p></p>
-        <button type="submit">
-    </article>
-    <article>
-        <img src="" alt="">
-        <p></p>
-        <button type="submit">
-    </article>
-    <article>
-        <img src="" alt="">
-        <p></p>
-        <button type="submit">
-    </article>
-    <article>
-        <img src="" alt="">
-        <p></p>
-        <button type="submit">
-    </article>
+
+<body id="parent">
+    <div class="bgimg-1">
+        <!-- <div class="caption">
+                <span class="border">SCROLL DOWN</span>
+                </div> -->
+    </div>
+    <!-- This is calc models code -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="cloose">×</span>
+            <h1>Diabetes</h1>
+            <form id="form1m" action="">
+              <div class="calcDiv">
+                <label for="">Type the amount of carbohydrates (Grams) in your meal to know how many units of insulin you need to take:</label><br>
+                <input type="number" name="" id="inputDiabetes"><br>
+                <input type="submit" name="" id="diabetesSubmit">
+              </div>
+              <div class="resultsDiv">
+                <p for="" id="result1"></p>
+              </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="cloose">×</span>
+        <h1>Kidney Disease </h1>
+        <h2>Protein Intake Calculator</h2>
+        <form id="form2m" action="">
+            <div class="calcDiv">
+              <label  for="k1">In which stage are you in kidney failure ? </label> <br>
+            <input type="radio" id="preDialysis" name="kidney" value="pre-dialysis">
+            <label for="preDialysis">Pre-Dialysis</label><br>
+            <input type="radio" id="dialysis" name="kidney" value="dialysis">
+            <label for="dialysis">Dialysis</label><br>
+            <label for="kidneySubmit">Enter your weight in kg:</label>
+            <input type="number" name="" id="inputKidney" ><br>
+            <input type="submit" id="kidneySubmit" >
+            </div>
+            <div class="resultsDiv">
+              <p id="result2"></p>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="cloose">×</span>
+            <h1>Calorie</h1>
+            <form id="form3m" action="">
+              <div class="calcDiv" id="calcalc">
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male"> Male </label> <br>
+
+                <input type="radio" id="female" name="gender" value="female" >
+                <label for="female"> Female </label><br>
+
+                <label for="inputWeight">Weight (in kg) : </label>
+                <input type="number" id="weight" >
+
+
+                <label for="inputHeight">Height (in cm) : </label>
+                <input type="number" id="height" >
+
+                <label for="inputAge">Age (in years) : </label>
+                <input type="number" id="age" >
+
+                <input type="submit" id="calorieSubmit" >
+              </div>
+
+                
+                <div class="resultsDiv">
+                  <p for="" id="result3"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- End of calc models -->
+
+    <nav class="level2Items">
+        <button onclick="location.href = '#diseasesSection';"  id="dis" class="dropbtn">Diseases</button>
+        <button onclick="location.href = '#restSection';" id="rest" class="dropbtn">Restaurants</button>
+        <button onclick="location.href = '#recSection';" id="rec" class="dropbtn">Recepies</button>
+
+        <select class="dropbtn" id="list" style="padding: 10px;" onchange="getSelectValue();">
+            <option value="" id="firstOption">Calculations</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="kidney">Kidney</option>
+            <option value="calorie">Obesity</option>
+        </select>
+
+
+        <button onclick="location.href = '#diseasesSection';" id="therap" class="dropbtn" onclick="chatmatechat()">Contact Therapists</button>
+        <button onclick="location.href = '#ourteamSection';" id="about" class="dropbtn">About Us</button>
+    </nav> 
+
+
+    <div id="paragraphDiv" style="color: white;text-align:center;padding:50px 80px;text-align: justify; font-size: 30px; font-family: 'Raleway', sans-serif;">
+        <h3 style="text-align:center; color: whitesmoke; font-size: 40px; font-family: 'Raleway', sans-serif;">Nutrition Can Help You</h3>
+        <p>Proper diet helps controlling lifestyle diseases. A therapeutic nutrition reduce symptoms of diseases like diabetes, cardiovascular diseases, digestive diseases, obesity, and other disorders.  Therapeutic nutrition also helps to prevent the complications of some chronic diseases.</p>
+    </div>
+    
+
+      
+     <!-- to add a backgound -->
+    <div id="paragraphDiv2" ></div>
+
+  <br>
+  <br>
+  <h3 id="diseasesSection" style="text-align:center; color:#591D36; font-size: 40px;">Diseases Section</h3>
+    <div class="bgimg-2">
+        <ul class="cards">
+            <li class="cards__item">
+              <div class="card">
+                <div id="d1" class="card__image"></div>
+                <div class="card__content">
+                  <div class="card__title">Hypertension</div>
+                  <p class="card__text">Hypertension refers to high blood pressure. To maintain your blood pressure levels, you
+                    should maintain your food intake and reduce the amount of salt you take, and try to maintain a healthy
+                    weight. Each disease has a certin diet rules and restrictions.</p>
+                  <button style="background-color: #593846;" id="myBtn1" class="btn btn--block card__btn myBtn">Examples</button>
+                  <div id="myModal" class="newModal">
+
+                    <div class="newModal-content filter">
+                        <span class="close">×</span>
+                        <div style="float: left;" class="table-title">
+                            <table class="table-fill" id="table1"></table>
+                        </div>
+                        <div style="float: left;">
+                            <table class="table-fill" id="table2"></table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+                <div class="card">
+                  <div id="d2" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">Kidney Disease</div>
+                    <p class="card__text">Dietary guidelines for kidney patients vary according to the case or the stage. You should
+                      control your intake of potassium, calcium, phosphorus, sodium, protein, fluid and calorie.</p>
+                      <button style="background-color: #593846;" id="myBtn2" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <div id="d3" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">Diabetes</div>
+                    <p class="card__text">To help you in following your diet, we provide you with a list of healthy restaurants that
+                      have your order
+                      with consideration of your diet limits.</p>
+                      <button style="background-color: #593846;" id="myBtn3" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <div id="d4" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">IBS</div>
+                    <p class="card__text">IBS refers to Irritable Bowel Syndrome.
+                      Patients with IBS should do some changes in their diet to treat the symptoms.
+                      Foods that cause pain are different from one patient to another.
+                      You should know what are the triggers that affect your colon and avoid them.</p>
+                      <button style="background-color: #593846;" id="myBtn4" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <div id="d5" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">Celiac Disease</div>
+                    <p class="card__text">Celiac disease is a digestive disorder in the small intestine. This disease is triggered by
+                      eating foods that contain Gluten.</p>
+                      <button style="background-color: #593846;" id="myBtn5" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <div id="d6" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">Obesity</div>
+                    <p class="card__text">Obesity is a medical disorder that involve an excessive amount of body fat,
+                      and it increases the risk of other health problems.
+                      you should reduce the amount of calorie you take per day to help your body to lose the excessive fat.</p>
+                      <button style="background-color: #593846;" id="myBtn6" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item lastCard">
+                <div class="card">
+                  <div id="d7" class="card__image"></div>
+                  <div class="card__content">
+                    <div class="card__title">Epilepsy</div>
+                    <p class="card__text">Epilepsy is a neurological disease that causes seizures. Studies suggest that following a
+                      ketogenic diet would help to reduce the seizures.</p>
+                      <button style="background-color: #593846;" id="myBtn7" class="btn btn--block card__btn myBtn">Examples</button>
+                      <div id="myModal" class="newModal">
+    
+                        <div class="newModal-content filter">
+                            <span class="close">×</span>
+                            <div style="float: left;" class="table-title">
+                              <table class="table-fill" id="table1"></table>
+                          </div>
+                          <div style="float: left;">
+                              <table class="table-fill" id="table2"></table>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </li>
+        </ul> 
+         <!-- <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+        </div> -->
+    </div>
+
+
+  
+
+<!-- resturants section -->
+
+
+    <div id="hash" style="position:relative;">
+        <div style="color:#ddd;text-align:center;padding:50px 80px;text-align: justify;">
+          <h2 style="color: #ddd; text-align: center; font-size: 40px; font-family: 'Raleway', sans-serif;">Healthy Food</h2>
+            <p style="color: #ddd; text-align: center; font-size: 30px; font-family: 'Raleway', sans-serif;">Sometimes following a certain diet may be difficult, and finding the right restaurant that provides the food you want and suits you is hard . To help you, here is a list of healthy restaurants  that would help you to stick on your diet and offers you a delicious food meals.</p>
+        </div>
+    </div>
+
+      <!-- to add a background -->
+      <div id="resturantBackground"></div>
+<br>
+<br>
+<br>
+<h3 id="restSection" style="text-align:center; color:#591D36; font-size: 40px;">Healthy Restaurants</h3>
+<br>
+<br>
+
+    <div class="bgimg-3" style="height: 1000px;">
+      <div  class="cardrest transition">
+        <h2 class="restHeader transition">Azka Healthy Sweets</h2>
+        <p class="restparagraph">This restaurant offers you a sugar-free and gluten-free sweets options, and every choice is really delecious.</p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/dir/31.995374,35.8607108/31.9644418,35.8566284/@31.9792511,35.8433661,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" target="_blank" class="cta">Location</a></div>
+        <div class ="cardrest_circle transition"></div>
+      </div>
+
+      <div id="one" class="cardrest transition">
+        <h2 class="restHeader transition">Low Carb Healthy Food</h2>
+        <p class="restparagraph">This restaurant offers you a ketogenic diet choices.</p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/place/Low+carb+healthy+food/@31.9848436,35.859113,15z/data=!4m5!3m4!1s0x0:0x5c3d61e0afcd2719!8m2!3d31.9848436!4d35.859113" target="_blank" class="cta">Location</a></div>
+        <div class=" cardrest_circle transition"></div>
+      </div>
+
+      <div id="two" class="cardrest transition">
+        <h2 class="restHeader transition">Protein</h2>
+        <p class="restparagraph">This restaurant offers you sevral options of salads and healthy foods to help you maintain your diet.</p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/place/Protein/@31.9581398,35.8650381,15z/data=!4m5!3m4!1s0x0:0xf49c9f4d55725c0d!8m2!3d31.9581398!4d35.8650381" target="_blank" class="cta">Location</a></div>
+        <div class=" cardrest_circle transition"></div>
+      </div>
+
+      <div id="three" class="cardrest transition">
+        <h2 class="restHeader transition">Eat Smart</h2>
+        <p class="restparagraph">This restaurant have a monthly subscription that provides you a daily healthy food delivary.</p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/place/Eat+Smart+Jordan/@31.9564268,35.8596161,15z/data=!4m5!3m4!1s0x0:0x777cac6147d3f9d!8m2!3d31.9564268!4d35.8596161" target="_blank" class="cta">Location</a></div>
+        <div class=" cardrest_circle transition"></div>
+      </div>
+
+      <div id="four" class="cardrest transition">
+        <h2 class="restHeader transition">Healthy Fresh Amman</h2>
+        <p class="restparagraph">This restaurant offers you foods with low salt that would help you to control your sodium intake.</p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/place/Healthy+Fresh+Amman/@31.975573,35.884352,15z/data=!4m5!3m4!1s0x0:0xacefb73cc191481c!8m2!3d31.975573!4d35.884352" target="_blank" class="cta">Location</a></div>
+        <div class=" cardrest_circle transition"></div>
+      </div>
+
+      <div id="five" class="cardrest transition">
+        <h2 class="restHeader transition">NutriBox</h2>
+        <p class="restparagraph">This restaurantoffers you  A healthy, easy, delicious and perfectly-balanced meal. </p>
+        <div class="cta-container transition"><a href="https://www.google.com/maps/place/The+Nutribox/@31.9742161,35.8465094,15z/data=!4m5!3m4!1s0x0:0x312c2011c38053fa!8m2!3d31.9742161!4d35.8465094" target="_blank" class="cta">Location</a></div>
+        <div class=" cardrest_circle transition"></div>
+      </div>
+        <!-- <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+        </div> -->
+    </div>
+
+
+
+    <!-- recipe section -->
+
+
+
+    
+    <div id="recYal" style="position:relative;">
+      <div style="color:#ddd;text-align:center;padding:50px 80px;text-align: justify;">
+        <h2 style="color: #ddd; text-align: center; font-size: 40px; font-family: 'Raleway', sans-serif;">Healthy Recipes </h2>
+          <p style="color: #ddd; text-align: center; font-size: 30px; font-family: 'Raleway', sans-serif;">You love to cook? You will love it now more! Here is some healthy recipes that would help you to cook delicious meals and provide you with recipes that are suitable for your health conditions.</p>
+      </div>
+  </div>
+  <div id="recipeBackground"></div>
+  <br>
+  <br>
+  <br>
+  <h3 id="recSection" style="text-align:center; color:#591D36; font-size: 40px;">Healthy Recipes</h3>
+  <br>
+  <br>
+
+
+
+    <div class="bgimg-4" style="height: 1000px;">
+        <div id="six" class="cardrest transition">
+          <h2 class="restHeader transition">Breakfast</h2>
+          <p class="restparagraph" style="text-align: center;">Kidney Disease Diet .</p>
+          <div class="cta-container transition"><a href=" https://kidneyrd.com/renal-diet-breakfast/ " target="_blank"
+              class="cta">Recipe</a></div>
+          <div class=" cardrest_circle transition"></div>
+        </div>
+
+        <div id="seven" class="cardrest transition">
+          <h2 class="restHeader transition">Pasta</h2>
+          <p class="restparagraph">Gluten Free Diet .</p>
+          <div class="cta-container transition"><a href=" https://www.delish.com/cooking/recipe-ideas/a55824/best-gluten-free-pasta-recipe/" target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+        
+        <div id="eight" class="cardrest transition">
+          <h2 class="restHeader transition">Greek Salad</h2>
+          <p class="restparagraph">Gluten Free diet.</p>
+          <div class="cta-container transition"><a href="https://www.delish.com/cooking/g4203/gluten-free-dinner-ideas/?slide=7  " target="_blank"  class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+        
+        <div id="nine" class="cardrest transition">
+          <h2 class="restHeader transition">Lunch</h2>
+          <p class="restparagraph">Low Sodium Diet .</p>
+          <div class="cta-container transition"><a href=" https://www.tasteofhome.com/recipes/grilled-basil-chicken-and-tomatoes/ " target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+
+        <div id="ten" class="cardrest transition">
+          <h2 class="restHeader transition">Noodels </h2>
+          <p class="restparagraph"> Low Carb Diet </p>
+          <div class="cta-container transition"><a href=" https://www.delish.com/cooking/recipe-ideas/a28497932/butternut-squash-noodles-recipe/ " target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+        
+        <div id="eleven" class="cardrest transition">
+          <h2 class="restHeader transition">Keto Sushi</h2>
+          <p class="restparagraph">Low Carb Diet</p>
+          <div class="cta-container transition"><a href=" https://www.delish.com/cooking/recipe-ideas/recipes/a52239/zucchini-sushi-recipe/ " target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+        
+        <div id="twelve" class="cardrest transition">
+          <h2 class="restHeader transition">Falafel</h2>
+          <p class="restparagraph">Low Fat Diet </p>
+          <div class="cta-container transition"><a href="https://www.deliciousmagazine.co.uk/recipes/baked-falafel-tomato-sauce/  " target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+        
+        <div id="thirteen" class="cardrest transition">
+          <h2 class="restHeader transition">Lunch </h2>
+          <p class="restparagraph">Low Fat Diet </p>
+          <div class="cta-container transition"><a href=" https://www.deliciousmagazine.co.uk/recipes/healthier-chicken-satay/ " target="_blank" class="cta">Recipe</a></div>
+          <div  class=" cardrest_circle transition"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <div id="endYal"></div>
+    <br>
+    <br>
+    <h3 id="ourteamSection" style="text-align:center; color:#591D36; font-size: 40px;">Our Team </h3>
+    <br>
+    <!-- the out team section -->
+<footer >
+        <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="Imgs/reem.jpg">
+                        
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Reem Asaad</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="Imgs/huda.jpg">
+                        
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Huda Al-Jundi</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="Imgs/hadi.jpg">
+                        
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Hadi Aji</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </footer>
+<!-- chatbox -->
+
+<input type="checkbox" id="chika">
+<label id="icon" for="chika">
+    <i class="opeeen"></i>
+    <i class="cloose"></i>
+</label>
+<div class="chatbox">
+    <div class="chatlogs" id="chatlog">
+        <div class="chat friend">
+            <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+            <p class="chat-message">Hallo mate, In this section we can provide you a better help. <br>
+            </p>
+        </div>
+        <div class="chat friend">
+            <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+            <p class="chat-message">By answering these 9 information qustions you will help yourself and help our therapists when they contact you </p>
+        </div>
+        <div class="chat friend">
+            <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+            <p class="chat-message">I will be with you in the trip so you won't get bored</p>
+        </div>
+        <div class="chat friend">
+            <div class="user-photo"> <img src="Imgs/ava.png"> </div>
+            <p class="chat-message">So first of all mate, What is your name?</p>
+        </div>
+
+    </div>
+
+    <div class="chat-form">
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <button id="sub" type="submit" onclick="myFunction()" onclick="document.getElementById('text').value = ''"></button>
+    </div>
+</div>
+<!-- chatbox end here -->
+
+
+    <script src="JS/calc.js"></script>
+    <script src="JS/text.js"></script>
+    <script src="newPage.js"></script>
+    <script src="JS/food.js"></script>
+
 </body>
+
 </html>

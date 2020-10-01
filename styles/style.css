@@ -1,0 +1,197 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* background-image: url(../Imgs/wall.jpg);
+    background-size: 15%; */
+  }
+
+#homeImage {
+    display: block;
+    position: relative;
+    background-image: url(../Imgs/home.jpg);
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.float {
+    position: absolute;
+    top: 20px;
+    left: 88%;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 900%;
+}
+
+h2 {
+    font-size: 400%;
+}
+
+nav {
+    
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+    
+}
+nav ul li:hover {
+    
+   cursor: pointer;
+   color: gray;
+    
+}
+li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 0 0 45px;
+    text-align: center;
+    font-size: 185%;
+    padding: 5px;
+}
+
+.artical-header{
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#dise1{
+height: 60%;
+width: 100%;
+background-image: url(../Imgs/hypertension.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: green;
+margin-bottom: 10%;
+}
+.articleP{
+    display: inline-block;
+   margin-top: 22%;
+   font-size: 200%;
+   padding-left: 1%;
+   background-color: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(10px);
+}
+#dise2{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/kidney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+ul {
+    margin-bottom: 5%;
+}
+
+#dise3{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/diabetes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+#dise4{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/IBS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+#dise5{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/CD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+
+#dise6{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/Obis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    margin-bottom: 10%;
+}
+#dise7{
+    height: 60%;
+    width: 100%;
+    background-image: url(../Imgs/epl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+    color: green;
+    margin-bottom: 10%;
+}
+
+
+.dropbtn {
+    background-color: #777777;
+    color: white;
+    padding: 16px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+  }
+  .dropbtn:hover{
+     background-color: green;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 2px 4px 4px 0px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: olive;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgb(0, 104, 0);}
+
+
+

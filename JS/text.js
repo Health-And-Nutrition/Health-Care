@@ -23,7 +23,7 @@ function next() {
     messagePhoto.setAttribute('class', 'user-photo');
     messagefull.appendChild(messagePhoto);
     var image = document.createElement('img');
-    image.setAttribute('src', '../Imgs/ava.png');
+    image.setAttribute('src', 'Imgs/ava.png');
     messagePhoto.appendChild(image);
     var messagecontent = document.createElement('p');
     messagecontent.setAttribute('class', 'chat-message');
@@ -48,7 +48,7 @@ function myFunction() {
         messagePhoto.setAttribute('class', 'user-photo');
         messagefull.appendChild(messagePhoto);
         var image = document.createElement('img');
-        image.setAttribute('src', '../Imgs/ava.png');
+        image.setAttribute('src', 'Imgs/ava.png');
         messagePhoto.appendChild(image);
         var messagecontent = document.createElement('p');
         messagecontent.setAttribute('class', 'chat-message');

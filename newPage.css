@@ -15,12 +15,15 @@
   
   /* Modal Content */
   .newModal-content {
-    background-color: #fefefe;
+    background-color: whitesmoke;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
-    height: 600px;
+    height: 650px;
+    top: 5%;
+    position: absolute;
+    left: 20%;
   }
   
   /* The Close Button */

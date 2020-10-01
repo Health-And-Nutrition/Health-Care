@@ -82,7 +82,7 @@ var Disease6 = function (filePath, h1, h2) {
     Disease6.avoidFood6.push(this);
 };
 Disease6.avoidFood6 = [];
-new Disease6('../tableImgs/highfat.jpg', 'High Fat', 'Raises blood cholesterol levels');
+new Disease6('../tableImgs/highfat.jpg', 'High Fat', 'Raises blood cholesterol');
 new Disease6('../tableImgs/sweets.jpg', 'Sweets as a whole', 'High in calories');
 new Disease6('../tableImgs/highFiber.jpg', 'High Fiber', 'boost metabolism');
 new Disease6('../tableImgs/healthyfats.jpg', 'Healthy Fats', 'Improve HDL');
@@ -106,7 +106,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'Hypertension') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
 
@@ -116,6 +117,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -134,7 +136,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'Kidney Disease') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
 
@@ -143,6 +146,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -161,7 +165,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'Diabetes') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
 
@@ -170,6 +175,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -188,7 +194,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'IBS') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
 
@@ -197,6 +204,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -214,7 +222,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'Celiac Disease') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
         console.log('wth');
@@ -223,6 +232,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -241,7 +251,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'obesity') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
         console.log('wth');
@@ -250,6 +261,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -267,7 +279,8 @@ var renderTableFirstColumn = function (diseaseName) {
     if (diseaseName === 'epilepsy') {
         var row1 = document.createElement('tr');
         table1.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Should Avoid";
         row1.appendChild(column1);
         console.log('wth');
@@ -276,6 +289,7 @@ var renderTableFirstColumn = function (diseaseName) {
             table1.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -302,7 +316,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'Hypertension') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
         for (var i = 2; i < 4; i++) {
@@ -310,6 +325,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -328,7 +344,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'Kidney Disease') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -337,6 +354,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -355,7 +373,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'Diabetes') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -364,6 +383,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -382,7 +402,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'IBS') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -391,6 +412,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -409,7 +431,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'Celiac Disease') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -418,6 +441,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -436,7 +460,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'obesity') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -445,6 +470,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');
@@ -463,7 +489,8 @@ var renderTableSecondColumn = function (diseaseName) {
     if (diseaseName === 'epilepsy') {
         var row1 = document.createElement('tr');
         table2.appendChild(row1);
-        var column1 = document.createElement('td');
+        var column1 = document.createElement('th');
+        column1.setAttribute('class', 'text-left');
         column1.textContent = "You Can Safly Consume";
         row1.appendChild(column1);
 
@@ -472,6 +499,7 @@ var renderTableSecondColumn = function (diseaseName) {
             table2.appendChild(row);
             for (var j = 0; j < 2; j++) {
                 var column = document.createElement('td');
+                column.setAttribute('class', 'text-left');
                 var figcaption = document.createElement('figcaption');
                 var figure = document.createElement('figure');
                 var img = document.createElement('img');

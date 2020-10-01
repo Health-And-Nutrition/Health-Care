@@ -1,17 +1,17 @@
 'use strict';
 
-// Get the modal
-var modal = document.getElementsByClassName('modal');
+// Get the modaal
+var modaal = document.getElementsByClassName('modal');
 
 
 function getSelectValue() {
     var selectedValue = document.getElementById("list").value;
     if(selectedValue == 'diabetes') {
-        modal[0].style.display = "block";
+        modaal[0].style.display = "block";
     } else if(selectedValue == 'kidney') {
-        modal[1].style.display = "block";
+        modaal[1].style.display = "block";
     } else if(selectedValue == 'calorie') {
-        modal[2].style.display = "block";
+        modaal[2].style.display = "block";
     }
     resetSelectElement();
 }
@@ -19,28 +19,28 @@ getSelectValue();
 
 
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+// Get the <span> element that closes the modaal
+var spain = document.getElementsByClassName("cloose");
 
-// When the user clicks on <span> (x), close the modal
-span[0].onclick = function() {
-    modal[0].style.display = "none";
+// When the user clicks on <span> (x), close the modaal
+spain[0].onclick = function() {
+    modaal[0].style.display = "none";
     document.getElementById("result1").textContent = '';
 }
 
-span[1].onclick = function() {
-    modal[1].style.display = "none";
+spain[1].onclick = function() {
+    modaal[1].style.display = "none";
     document.getElementById("result2").textContent = '';
 }
 
-span[2].onclick = function() {
-    modal[2].style.display = "none";
+spain[2].onclick = function() {
+    modaal[2].style.display = "none";
     document.getElementById("result3").textContent = '';
 }
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modaal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modaal) {
+        modaal.style.display = "none";
         
     }
 }
@@ -55,7 +55,6 @@ var labelK = document.getElementById('result2');
 function diabetes(event) {
     event.preventDefault();
     var diabetesEquation = Math.floor(0.3 * inputDiabetes.value);
-    console.log(diabetesEquation);
     labelD.innerHTML = diabetesEquation + ' units of insulin.'  ;
     document.getElementById("form1m").reset();
 }
@@ -69,8 +68,12 @@ buttonKidney.addEventListener('click', kidney);
 
 function kidney(event) {
     event.preventDefault();
-    if ((radioInput1.checked ||radioInput2.checked)&& inputKidney.value===''){
-    alert('fill all the fields please!');}
+     
+ if ( (!(radioInput1.checked) && !(radioInput2.checked))){
+        alert('Choose an option please!');
+    } else if ( (radioInput1.checked ||radioInput2.checked)  && (inputKidney.value==='')){
+        alert('Fill all the field please!');
+    }     
     else if (radioInput1.checked) {
         var preDialysis = 0.6 * inputKidney.value;
         labelK.innerHTML = parseFloat(preDialysis).toFixed(2) + 'g Of Protein You Need To Take Per Day.';

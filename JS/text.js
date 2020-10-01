@@ -67,3 +67,12 @@ function myFunction() {
 
     }
 }
+
+function chatmatechat(){
+    if(chika.checked === true){
+        chika.checked = false;
+    } else if(chika.checked === false){
+        chika.checked = true;
+    }
+
+}

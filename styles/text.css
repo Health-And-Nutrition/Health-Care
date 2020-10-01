@@ -14,8 +14,8 @@
     pointer-events: none;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     height: 565px !important;
-    background: rgb(110,47,152);
-    background: linear-gradient(90deg, rgba(110,47,152,1) 0%, rgba(130,54,182,1) 50%, rgba(160,69,221,1) 100%);
+    background: rgb(80, 24, 55);
+    background: linear-gradient(90deg, rgb(70, 22, 46) 0%, rgb(110, 29, 70) 50%, rgb(129, 15, 82) 100%);
     padding: 25px;
     margin: 20px auto;
     box-shadow: 0 3px #ccc;
@@ -35,7 +35,7 @@
     background: #eee;
     overflow-x: hidden;
     overflow-y: scroll;
-    box-shadow: inset 0 0 5px #931FE0;
+    box-shadow: inset 0 0 5px #50083a;
 }
 .chatlogs::-webkit-scrollbar {
     width: 10px;
@@ -73,12 +73,12 @@
     font-size: 18px;
 }
 .friend .chat-message {
-    background: rgb(110,47,152);
-    background: linear-gradient(90deg, rgba(110,47,152,1) 0%, rgba(130,54,182,1) 50%, rgba(160,69,221,1) 100%);
+    background: rgb(116, 37, 83);
+    background: linear-gradient(90deg, rgb(199, 40, 120) 0%, rgb(158, 50, 92) 50%, rgb(128, 25, 73) 100%);
 }
 .self .chat-message {
-    background: rgb(175,119,210);
-    background: linear-gradient(90deg, rgba(175,119,210,1) 0%, rgba(160,106,196,1) 50%, rgba(144,93,179,1) 100%);
+    background: rgb(175, 82, 136);
+    background: linear-gradient(90deg, rgb(153, 45, 99) 0%, rgb(192, 40, 98) 50%, rgb(231, 22, 120) 100%);
     order: -1;
 }
 .chat-form {
@@ -89,7 +89,7 @@
 }
 .chat-form textarea {
     background: #fbfbfb;
-    width: 75%;
+    width: 83%;
     height: 50px;
     border: 2px solid #eee;
     border-radius: 3px;
@@ -111,24 +111,23 @@
     background: rgba(0, 0, 0, 0.1);
 }
 .chat-form button {
-    background:#611594;
-    padding: 5px 15px;
-    font-size: 30px;
-    color: #fff;
+    background-image: url(../Imgs/Send.png);
+    background-size: 70px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: whitesmoke;
     border: none;
-    margin: 0 10px;
-    border: 1px solid black;
     border-radius: 3px;
-    box-shadow: 0 3px 0#611594;
+    box-shadow: 0 3px 0#591d36;
     cursor: pointer;
+    height: 50px;
+    width: 78px;
 
     -webkit-transition: backgroung .2s ease;
     -moz-transition: backgroung .2s ease;
     -o-transition: backgroung .2s ease;
 }
-.chat-form button:hover {
-    background: #7716b8;
-}
+
 #icon {
     position: fixed;
     right: 30px;

@@ -26,13 +26,13 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">×</span>
+            <span class="cloose">×</span>
             <h1>Diabetes</h1>
             <form id="form1m" action="">
               <div class="calcDiv">
-                <label for="">g of CHO</label><br>
-                <input type="number" name="" id="inputDiabetes" required><br>
-                <input type="submit" name="" id="diabetesSubmit" required>
+                <label for="">Type the amount of carbohydrates (Grams) in your meal to know how many units of insulin you need to take:</label><br>
+                <input type="number" name="" id="inputDiabetes"><br>
+                <input type="submit" name="" id="diabetesSubmit">
               </div>
               <div class="resultsDiv">
                 <p for="" id="result1"></p>
@@ -46,7 +46,7 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-        <span class="close">×</span>
+        <span class="cloose">×</span>
         <h1>Kidney Disease </h1>
         <h2>Protein Intake Calculator</h2>
         <form id="form2m" action="">
@@ -57,8 +57,8 @@
             <input type="radio" id="dialysis" name="kidney" value="dialysis">
             <label for="dialysis">Dialysis</label><br>
             <label for="kidneySubmit">Enter your weight in kg:</label>
-            <input type="number" name="" id="inputKidney" required><br>
-            <input type="submit" id="kidneySubmit" required>
+            <input type="number" name="" id="inputKidney" ><br>
+            <input type="submit" id="kidneySubmit" >
             </div>
             <div class="resultsDiv">
               <p id="result2"></p>
@@ -72,27 +72,27 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">×</span>
+            <span class="cloose">×</span>
             <h1>Calorie</h1>
             <form id="form3m" action="">
               <div class="calcDiv" id="calcalc">
-                <input type="radio" id="male" name="gender" value="male" required>
+                <input type="radio" id="male" name="gender" value="male" >
                 <label for="male"> Male </label> <br>
 
-                <input type="radio" id="female" name="gender" value="female" required>
+                <input type="radio" id="female" name="gender" value="female" >
                 <label for="female"> Female </label><br>
 
                 <label for="inputWeight">Weight (in kg) : </label>
-                <input type="number" id="weight" required>
+                <input type="number" id="weight" >
 
 
                 <label for="inputHeight">Height (in cm) : </label>
-                <input type="number" id="height" required>
+                <input type="number" id="height" >
 
                 <label for="inputAge">Age (in years) : </label>
-                <input type="number" id="age" required>
+                <input type="number" id="age" >
 
-                <input type="submit" id="calorieSubmit" required>
+                <input type="submit" id="calorieSubmit" >
               </div>
 
                 
@@ -130,7 +130,7 @@
         </select>
 
         
-        <button id="therap" class="dropbtn">Contact Therapists</button>
+        <button id="therap" class="dropbtn" onclick="chatmatechat()">Contact Therapists</button>
         <button id="about" class="dropbtn">About Us</button>
     </nav>
 
@@ -549,7 +549,7 @@
 
     <div class="chat-form">
         <textarea name="" id="text" cols="30" rows="10"></textarea>
-        <button id="sub" type="submit" onclick="myFunction()" onclick="document.getElementById('text').value = ''">Send</button>
+        <button id="sub" type="submit" onclick="myFunction()" onclick="document.getElementById('text').value = ''"></button>
     </div>
 </div>
 <!-- chatbox end here -->
